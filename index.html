@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/global.css" />
+    <link rel="stylesheet" type="text/css" href="./css/landing.css" />
+    <title>Coffee Shop - Home</title>
+  </head>
+  <body>
+    <header>
+      <!-- Main Navigation -->
+      <nav>
+        <a href="./index.html"
+          ><img src="./assets/logos/logo.svg" alt="coffee bean logo"
+        /></a>
+        <h2 class="nav__heading">nitro</h2>
+        <ul class="nav__links">
+          <li><a href="./index.html">About</a></li>
+          <li><a href="./pages/menu.html">Menu</a></li>
+          <li><a href="./pages/menu.html">Shop Now</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1>Nitro Coffee</h1>
+          <p>
+            Coffee is a brewed drink prepared from roasted coffee beans, the
+            seeds of berries from certain Coffea spices
+          </p>
+          <!-- Shop Now Button -->
+          <a href="./pages/menu.html"
+            ><button class="hero__button">Shop Now</button></a
+          >
+        </div>
+        <div class="hero__image">
+          <img src="./assets/images/coffeebeans-hero.png" alt="coffee bag" />
+        </div>
+      </section>
+      <!-- Products Section -->
+      <section class="products">
+        <h2>Our Products</h2>
+        <!-- Coffee Beans -->
+        <div class="products-card">
+          <img
+            class="products__images"
+            src="./assets/images/beans.png"
+            alt="coffee beans"
+          />
+          <h3>Coffee Beans</h3>
+          <!-- &#36; = $ -->
+          <p class="products__price">&#36;18.99</p>
+        </div>
+        <!-- Cold Brew -->
+        <div class="products-card">
+          <img
+            class="products__images"
+            src="./assets/images/coldbrew.png"
+            alt="cold brew"
+          />
+          <h3>Cold Brew</h3>
+          <!-- &#36; = $ -->
+          <p class="products__price">&#36;4.99</p>
+        </div>
+        <!-- In-house brew -->
+        <div class="products-card">
+          <img
+            class="products__images"
+            src="./assets/images/coffee_cup.png"
+            alt="in-house brew"
+          />
+          <h3>In-house brew</h3>
+          <!-- &#36; = $ -->
+          <p class="products__price">&#36;2.99</p>
+        </div>
+        <!-- View All CTA -->
+        <div>
+          <a href="./pages/menu.html">
+            <button class="products__button">View All</button>
+          </a>
+        </div>
+      </section>
+      <!-- Discount Section -->
+      <section class="discount">
+        <div class="discount__banner">
+          <!-- &#37; = % -->
+          <p>
+            Get 20&#37; off your first order with code:
+            <span class="font-bold">FirstNitro</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer - Company Info -->
+    <footer>
+      <!-- Address of Business-->
+      <div class="company-info">
+        <h3>Address</h3>
+        <p>503 Broadway Penthouse</p>
+        <p>New York</p>
+      </div>
+      <!-- Hours of Operation-->
+      <div class="company-info">
+        <h3>Hours</h3>
+        <p><span class="font-bold">Monday - Friday:</span> 9am - 7pm</p>
+        <p><span class="font-bold">Saturday - Sunday:</span> 10am - 5pm</p>
+      </div>
+      <!-- Social -->
+      <div class="company-info">
+        <h3>Social</h3>
+        <!-- Facebook -->
+        <a href="https://www.facebok.com">
+          <img
+            class="company-info__social"
+            src="./assets/logos/facebook.svg"
+            alt="facebook"
+          />
+        </a>
+        <!-- Yelp -->
+        <a href="https://www.yelp.com">
+          <img
+            class="company-info__social"
+            src="./assets/logos/yelp.svg"
+            alt="yelp"
+        /></a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com"
+          ><img
+            class="company-info__social"
+            src="./assets/logos/instagram.svg"
+            alt="instagram"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
