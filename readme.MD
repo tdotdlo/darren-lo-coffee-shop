@@ -3,7 +3,7 @@
 - Learned to understand when and how to differentiate the usage of padding vs margin.
   - Margin between elements.
   - Padding between sections.
--
+- Flexbox will only work on direct parent to child relationships
 
 ## vertical-align
 
