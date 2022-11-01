@@ -34,3 +34,7 @@
 ---
 
 # Coffee Shop - Sprint Two
+
+## :not()
+
+- Pseudo class that chooses every element that is not targeting the one in brackets. Used to target all elements in the .discount\_\_content container since alignment was off with the image.
