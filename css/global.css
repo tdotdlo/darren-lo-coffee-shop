@@ -1,47 +1,83 @@
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
 }
 
 /* Changes highlighted text background-color to Nitro Blue and font color to White */
 ::selection {
-  background-color: #5bacc3;
-  color: #fff;
+	background-color: #5bacc3;
+	color: #fff;
 }
 
 /* Creates smooth scrolling effect. */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Open Sans";
-  font-size: 1.125rem;
-  font-weight: 400;
+	font-family: "Open Sans";
+	font-size: 1.125rem;
+	font-weight: 400;
 }
 
 /* Headers Style for all pages */
 h1,
 h2 {
-  font-size: 3.75rem;
-  font-weight: 300;
+	font-size: 3.75rem;
+	font-weight: 300;
 }
 
 /* H3 and Nav Heading */
 :is(h3, .nav__heading) {
-  font-size: 2.0625rem;
-  font-weight: 300;
+	font-size: 2.0625rem;
+	font-weight: 300;
 }
 
 /* Nav and Sub Navigation */
 .nav__links > li > a,
 .nav__sub-nav > ul > li > a {
-  font-size: 1.3125rem;
-  font-weight: 400;
+	font-size: 1.3125rem;
+	font-weight: 400;
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Main Navigation */
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 1.1111rem;
+}
+
+.nav__logo > a > h2 {
+	font-size: 2.75rem;
+}
+
+.nav__logo {
+	display: flex;
+	column-gap: 0.32rem;
+}
+
+/* Removes Link underline and changes link colours to black */
+:is(.nav__logo, .nav__links) a {
+	text-decoration: none;
+	color: #000;
+}
+
+.nav__links {
+	display: flex;
+	justify-content: space-between;
+	width: 18.75rem;
+	list-style: none;
+	text-transform: uppercase;
+	margin-bottom: 0.44rem;
 }
 
 /* Nav and Sub Nav Hover State */
 :is(.nav__links, .nav__sub-nav) a:hover {
-  color: #5bacc3;
+	color: #5bacc3;
 }
+
+/* -------------------------------------------------------------------------- */

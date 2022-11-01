@@ -3,38 +3,6 @@ header {
 	background-color: #fff0ed;
 }
 
-.nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	padding: 1.1111rem;
-}
-
-.nav__logo > a > h2 {
-	font-size: 2.75rem;
-}
-
-.nav__logo {
-	display: flex;
-	column-gap: 0.32rem;
-}
-
-/* Removes LInk underline and changes link colours to black */
-:is(.nav__logo, .nav__links) a {
-	text-decoration: none;
-	color: #000;
-}
-
-.nav__links {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 18.75rem;
-	list-style: none;
-	text-transform: uppercase;
-	margin-bottom: 0.44rem;
-}
-
 /* Hero Section Image */
 
 .nav-hero {
@@ -99,6 +67,11 @@ header {
 	text-align: center;
 }
 
+/* Selects every even element that has .menu-item as class */
+.menu-item:nth-of-type(even) {
+	background-color: #f7f7f7;
+}
+
 .menu-item h2 {
 	padding-top: 1.1111rem;
 	margin-bottom: 2.2222rem;
@@ -119,9 +92,4 @@ header {
 .menu-item__price {
 	color: #5bacc3;
 	padding-bottom: 1.1111rem;
-}
-
-/* Selects every even element that has .menu-item as class */
-.menu-item:nth-of-type(even) {
-	background-color: #f7f7f7;
 }

@@ -11,38 +11,45 @@
 	<body>
 		<header>
 			<!-- Main Navigation -->
-			<nav>
-				<a href="./index.html"><img src="./assets/logos/logo.svg" alt="coffee bean logo" /></a>
-				<h2 class="nav__heading"><a href="index.html">nitro</a></h2>
+			<nav aria-label="primary" class="nav">
+				<div class="nav__logo">
+					<a href="./index.html">
+						<img src="./assets/logos/logo.svg" alt="coffe bean logo" />
+					</a>
+					<a href="./index.html"><h2>nitro</h2></a>
+				</div>
 				<ul class="nav__links">
-					<li><a href="./index.html">About</a></li>
-					<li><a href="./pages/menu.html">Menu</a></li>
-					<li><a href="./pages/menu.html">Shop Now</a></li>
+					<li>
+						<a href="./index.html">about</a>
+					</li>
+					<li><a href="../pages/menu.html">menu</a></li>
+					<li><a href="../pages/menu.html">shop now</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<!-- Hero Section -->
 			<section class="hero">
+				<!-- Hero Content -->
 				<div class="hero__content">
 					<h1>Nitro Coffee</h1>
 					<p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea spices</p>
 					<!-- Shop Now Button -->
 					<a href="./pages/menu.html"><button class="hero__button">Shop Now</button></a>
 				</div>
+				<!-- Hero Image -->
 				<img class=".hero__image" src="./assets/images/coffeebeans-hero.png" alt="coffee bag" />
 			</section>
 			<!-- Products Section -->
 			<section class="products">
 				<h2>Our Products</h2>
-
 				<div class="products-card-container">
 					<!-- Coffee Beans -->
 					<article class="products-card">
 						<div class="products-card__images">
 							<img src="./assets/images/beans.png" alt="coffee beans" />
 						</div>
-						<!-- Prod Description - Qty -->
+						<!-- Coffee Beans Description - Qty -->
 						<div class="products-card__description-qty">
 							<ul>
 								<li><h3>Coffee Beans</h3></li>
@@ -54,10 +61,10 @@
 					</article>
 					<!-- Cold Brew -->
 					<article class="products-card">
-						<div class="products-card__images">
+						<div class="products-card__images products-card__images--margin-bot">
 							<img src="./assets/images/coldbrew.png" alt="cold brew" />
 						</div>
-						<!-- Prod Description - Qty -->
+						<!-- Cold Brew Description - Qty -->
 						<div class="products-card__description-qty">
 							<ul>
 								<li><h3>Cold Brew</h3></li>
@@ -72,7 +79,7 @@
 						<div class="products-card__images">
 							<img src="./assets/images/coffee_cup.png" alt="in-house brew" />
 						</div>
-						<!-- Prod Description - Qty -->
+						<!-- In-house Description - Qty -->
 						<div class="products-card__description-qty">
 							<ul>
 								<li><h3>In-house Brew</h3></li>
@@ -92,6 +99,26 @@
 			</section>
 			<!-- Discount Section -->
 			<section class="discount">
+				<div class="discount-container">
+					<!-- Discount Content -->
+					<div class="discount__content">
+						<h2>We're Different</h2>
+						<p>We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence.</p>
+
+						<!-- Discount Icons -->
+						<div class="discount__icons">
+							<img src="./assets/images/planting.svg" alt="plant" />
+							<img src="./assets/images/coffee-beans.svg" alt="cocoa beans" />
+							<img src="./assets/images/coffee-cup.svg" alt="Mug" />
+						</div>
+						<a href="./index.html"><button class="discount__button">Learn More</button></a>
+					</div>
+					<div class="discount__image">
+						<img src="./assets/images/can.png" alt="Nitro Brew Can" />
+					</div>
+					<!-- Learn More CTA -->
+				</div>
+				<!-- Discount Banner -->
 				<div class="discount__banner">
 					<!-- &#37; = % -->
 					<p>
