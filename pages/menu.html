@@ -1,128 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="../css/global.css" />
-    <link rel="stylesheet" type="text/css" href="../css/menu.css" />
-    <title>Coffee Shop - Menu</title>
-  </head>
-  <body>
-    <header>
-      <!-- Main Navigation -->
-      <nav aria-label="primary" class="nav">
-        <a href="../index.html"
-          ><img src="../assets/logos/logo.svg" alt="coffe bean logo"
-        /></a>
-        <h2 class="nav__heading">nitro</h2>
-        <ul class="nav__links">
-          <li>
-            <a href="../index.html">about</a>
-          </li>
-          <li><a href="./menu.html">menu</a></li>
-          <li><a href="./menu.html">shop now</a></li>
-        </ul>
-      </nav>
-      <!-- Hero Section -->
-      <section class="nav-hero">
-        <div class="nav-hero__heading">
-          <h1>Menu</h1>
-        </div>
-      </section>
-      <!-- Hero Sub Nav -->
-      <nav class="nav__sub-nav" aria-label="secondary">
-        <ul>
-          <li><a href="#hot-drinks">Hot Drinks</a></li>
-          <li><a href="#cold-drinks">Cold Drinks</a></li>
-          <li><a href="#pastries">Pastries</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- H1 must not be in a section. If it is in a section, it will not apply properly in terms of font-size -->
-      <!-- Hot Drinks -->
-      <section class="menu-item">
-        <div id="hot-drinks">
-          <h2>Hot Drinks</h2>
-          <!-- In-house Brew - Menu Item-->
-          <h3>In-house Brew</h3>
-          <div class="menu-item__desc">
-            <p>
-              Our in-house medium roast is a classic balance between sweet
-              vanilla, nutty hazelnut, and a smooth low acidity to bring
-              everything together.
-            </p>
-          </div>
-          <p class="menu-item__price">&#36;2.99</p>
-          <!-- Espresso - Menu Item -->
-          <h3 class="menu-item__">Espresso</h3>
-          <div class="menu-item__desc">
-            <p>
-              A balance between bold and smooth, powerful and sweet, our
-              signature espresso blend is a complex flavor profile. It features
-              strong notes of semi-sweet chocolate and caramel, with mild
-              acidity and a bright floral finish.
-            </p>
-          </div>
-          <p class="menu-item__price">&#36;4.99</p>
-        </div>
-      </section>
-      <!-- Cold Drinks - Section -->
-      <section class="menu-item">
-        <div id="cold-drinks">
-          <h2>Cold Drinks</h2>
-          <!-- Cold Brew - Menu Item-->
-          <h3>Cold Brew</h3>
-          <div class="menu-item__desc">
-            <p>
-              Our bright and delicious coffee blend, brewed over ice to give you
-              a cold coffee freshness with all the flavor of our amazing
-              in-house coffee.
-            </p>
-          </div>
-          <p class="menu-item__price">&#36;3.99</p>
-          <!-- Iced Chai Latte - Menu Item-->
-          <h3>Iced Chai Latte</h3>
-          <div class="menu-item__desc">
-            <p>
-              A creamy drink with a kick, this drink features spicy chai tea
-              blended with your choice of milk and poured over ice.
-            </p>
-          </div>
-          <p class="menu-item__price">&#36;6.99</p>
-        </div>
-      </section>
-      <!-- Pastries - Section -->
-      <section class="menu-item">
-        <div id="pastries" class="menu-item__pastries">
-          <h2>Pastries</h2>
-          <!-- Bacon Oatmeal Raisin Cookie - Menu Item -->
-          <h3>Bacon Oatmeal Raisin Cookie</h3>
-          <div class="menu-item__desc">
-            <p>
-              An infused bacon, sugar and egg mixture is folded in a perfect
-              blend of oats, flour, raisins and cinnamon to create a soft and
-              chewy textured cookie.
-            </p>
-          </div>
-          <p class="menu-item__price">&#36;3.50</p>
-          <!-- Blueberry Muffin - Menu Item -->
-          <h3>Blueberry, Lemon and Thyme Muffin</h3>
-          <div class="menu-item__desc">
-            <p>
-              Tart and sweet, this classic blueberry and lemon combination comes
-              with an earthy twist.
-            </p>
-          </div>
-          <p class="menu-item__price">&#36;2.50</p>
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer></footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../css/menu.css" />
+		<title>Coffee Shop - Menu</title>
+	</head>
+	<body>
+		<header>
+			<!-- Main Navigation -->
+			<nav aria-label="primary" class="nav">
+				<div class="nav__logo">
+					<a href="../index.html">
+						<img src="../assets/logos/logo.svg" alt="coffe bean logo" />
+					</a>
+					<a href="../index.html"><h2>nitro</h2></a>
+				</div>
+				<ul class="nav__links">
+					<li>
+						<a href="../index.html">about</a>
+					</li>
+					<li><a href="./menu.html">menu</a></li>
+					<li><a href="./menu.html">shop now</a></li>
+				</ul>
+			</nav>
+			<!-- Hero Section -->
+			<section class="nav-hero">
+				<div class="nav-hero__heading">
+					<h1>Menu</h1>
+				</div>
+			</section>
+			<!-- Hero Sub Nav -->
+			<nav class="nav__sub-nav" aria-label="secondary">
+				<ul>
+					<li><a href="#hot-drinks">Hot Drinks</a></li>
+					<li><a href="#cold-drinks">Cold Drinks</a></li>
+					<li><a href="#pastries">Pastries</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- H1 must not be in a section. If it is in a section, it will not apply properly in terms of font-size -->
+			<!-- Hot Drinks -->
+			<section class="menu-item">
+				<h2 id="hot-drinks">Hot Drinks</h2>
+				<!-- In-house Brew - Menu Item-->
+				<h3>In-house Brew</h3>
+				<div class="menu-item__desc">
+					<p>Our in-house medium roast is a classic balance between sweet vanilla, nutty hazelnut, and a smooth low acidity to bring everything together.</p>
+				</div>
+				<p class="menu-item__price">&#36;2.99</p>
+				<!-- Espresso - Menu Item -->
+				<h3>Espresso</h3>
+				<div class="menu-item__desc">
+					<p>
+						A balance between bold and smooth, powerful and sweet, our signature espresso blend is a complex flavor profile. It features strong notes of semi-sweet chocolate and caramel, with mild
+						acidity and a bright floral finish.
+					</p>
+				</div>
+				<p class="menu-item__price">&#36;4.99</p>
+			</section>
+			<!-- Cold Drinks - Section -->
+			<section class="menu-item">
+				<h2 id="cold-drinks">Cold Drinks</h2>
+				<!-- Cold Brew - Menu Item-->
+				<h3>Cold Brew</h3>
+				<div class="menu-item__desc">
+					<p>Our bright and delicious coffee blend, brewed over ice to give you a cold coffee freshness with all the flavor of our amazing in-house coffee.</p>
+				</div>
+				<p class="menu-item__price">&#36;3.99</p>
+				<!-- Iced Chai Latte - Menu Item-->
+				<h3>Iced Chai Latte</h3>
+				<div class="menu-item__desc">
+					<p>A creamy drink with a kick, this drink features spicy chai tea blended with your choice of milk and poured over ice.</p>
+				</div>
+				<p class="menu-item__price">&#36;6.99</p>
+			</section>
+			<!-- Pastries - Section -->
+			<section class="menu-item">
+				<h2 id="pastries">Pastries</h2>
+				<!-- Bacon Oatmeal Raisin Cookie - Menu Item -->
+				<h3>Bacon Oatmeal Raisin Cookie</h3>
+				<div class="menu-item__desc">
+					<p>An infused bacon, sugar and egg mixture is folded in a perfect blend of oats, flour, raisins and cinnamon to create a soft and chewy textured cookie.</p>
+				</div>
+				<p class="menu-item__price">&#36;3.50</p>
+				<!-- Blueberry Muffin - Menu Item -->
+				<h3>Blueberry, Lemon and Thyme Muffin</h3>
+				<div class="menu-item__desc">
+					<p>Tart and sweet, this classic blueberry and lemon combination comes with an earthy twist.</p>
+				</div>
+				<p class="menu-item__price">&#36;2.50</p>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer></footer>
+	</body>
 </html>
