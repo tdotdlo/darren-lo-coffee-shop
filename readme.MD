@@ -1,3 +1,5 @@
+# PLEASE NOTE THAT THIS PROJECT WAS DONE WITH 1280 SET AS THE WIDTH
+
 # Learning Outcomes
 
 - Learned to understand when and how to differentiate the usage of padding vs margin.
@@ -34,6 +36,30 @@
 ---
 
 # Coffee Shop - Sprint Two
+
+- Added `<address>` schematic tag to the address company-info portion in footer
+- Refactored code to use Flexbox for all elements that were previously using
+
+```
+div {
+    display: inline;
+}
+
+div {
+    display: inline-block;
+}
+```
+
+Refactored to:
+
+```
+div {
+    display: flex;
+}
+```
+
+- properties were different based on the need of the design and mock up delivered to us.
+- Refactored all code with recommendations given on Feedback.
 
 ## :not()
 
