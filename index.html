@@ -35,7 +35,11 @@
 					<h1>Nitro Coffee</h1>
 					<p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species</p>
 					<!-- Shop Now Button -->
-					<a href="./pages/menu.html" class="hero__button">Shop Now</a>
+					<button class="hero__button">
+						<!-- Shop Now Border -->
+						<div class="hero__button--border"></div>
+						<a href="./pages/menu.html">Shop Now</a>
+					</button>
 				</div>
 				<!-- Hero Image -->
 				<img src="./assets/images/coffeebeans-hero.png" alt="coffee bag" />
@@ -91,9 +95,11 @@
 					</article>
 				</div>
 				<!-- View All CTA -->
-				<div>
-					<a class="products__button" href="./pages/menu.html"> View All </a>
-				</div>
+				<button class="products__button">
+					<!-- View All Border -->
+					<div class="products__button--border"></div>
+					<a href="./pages/menu.html">View All</a>
+				</button>
 			</section>
 			<!-- Discount Section -->
 			<section class="discount">
@@ -109,9 +115,14 @@
 							<img src="./assets/images/coffee-beans.svg" alt="cocoa beans" />
 							<img src="./assets/images/coffee-cup.svg" alt="Mug" />
 						</div>
-						<a class="discount__button" href="./index.html">Learn More</a>
+						<button class="discount__button">
+							<!-- View All Border -->
+							<div class="discount__button--border"></div>
+							<a href="./pages/menu.html">Learn More</a>
+						</button>
 					</div>
 					<div class="discount__image">
+						<div class="discount__image--border"></div>
 						<img src="./assets/images/can.png" alt="Nitro Brew Can" />
 					</div>
 				</div>
@@ -127,6 +138,7 @@
 		</main>
 		<!-- Footer - Company Info -->
 		<footer>
+			<img class="footer__logo-image-address" src="./assets/logos/logo.svg" />
 			<!-- Address of Business-->
 			<address class="company-info">
 				<h3>Address</h3>
@@ -159,6 +171,7 @@
 					</a>
 				</div>
 			</div>
+			<img class="footer__logo-image-social" src="./assets/logos/logo.svg" />
 		</footer>
 	</body>
 </html>
