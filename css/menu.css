@@ -113,8 +113,14 @@ header {
 	}
 }
 
-@media (min-width: 90rem) and (max-width: 124.94rem) {
+@media (min-width: 90rem) and (max-width: 119.94rem) {
 	.menu-item__desc {
 		width: 33%;
 	}
 }
+
+@media (min-width: 120rem) {
+	.menu-item__desc {
+		width: 25%;
+	}
+} ;
