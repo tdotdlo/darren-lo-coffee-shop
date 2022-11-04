@@ -6,10 +6,10 @@
 /* Hero */
 .hero {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	column-gap: 12.5rem;
+	column-gap: 300px;
 	padding-top: 3.75rem;
 	padding-bottom: 5rem;
 }
@@ -22,13 +22,10 @@
 	align-items: flex-start;
 	height: 55vh;
 	width: 30%;
-	margin-right: 20px;
 }
 
-/* Hero Image */
 .hero__image {
-	display: inline-block;
-	margin-left: 20rem;
+	margin-right: 100px;
 }
 
 /* Products */
@@ -97,7 +94,7 @@
 	height: 9.38rem;
 	border-bottom-right-radius: 0.63rem;
 	border-bottom-left-radius: 0.63rem;
-	margin-top: 30px;
+	margin-top: 1.88rem;
 	padding: 1.25rem 1.11rem;
 }
 
@@ -135,7 +132,7 @@
 .discount-container {
 	display: flex;
 	justify-content: space-between;
-	width: 88%;
+	width: 90%;
 	margin: 10rem 0rem;
 }
 
@@ -144,7 +141,7 @@
 	display: flex;
 	flex-direction: column;
 	width: 40%;
-	row-gap: 1.25rem;
+	row-gap: 1.88rem;
 	margin-right: auto;
 }
 
@@ -174,13 +171,13 @@
 	padding: 1.25rem;
 	min-width: 25rem;
 	max-width: 31.25rem;
-	height: 65vh;
+	height: 47vh;
 }
 
 /* Discount Banner */
 .discount__banner {
 	background-color: #393939;
-	max-width: 90%;
+	width: 90%;
 	color: #fff;
 	text-align: center;
 	padding: 40px;
@@ -193,14 +190,16 @@
 }
 
 /* Buttons */
-:is(.hero__button, .products__button, .discount__button) > a {
+:is(.hero__button, .products__button, .discount__button) {
 	background-color: #5bacc3;
 	color: #fff;
 	min-width: 10rem;
-	/* max-width: 80%; */
+	appearance: button;
 	padding: 1.1111rem;
 	font-size: 1.125rem;
 	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
 	border: none;
 	cursor: pointer;
 }
@@ -236,4 +235,54 @@ address {
 :is(.discount__icons, .company-info) img {
 	min-width: 3.13rem;
 	max-width: 7.5rem;
+}
+
+/* Media Query for screens larger than 1280px */
+@media (min-width: 80rem) and (max-width: 89.94rem) {
+	.hero {
+		column-gap: 25rem;
+	}
+
+	.hero__content {
+		justify-content: center;
+		width: 31%;
+		row-gap: 1.88rem;
+	}
+
+	.discount__content {
+		width: 43%;
+	}
+
+	footer {
+		column-gap: 7vw;
+	}
+}
+
+@media (min-width: 90rem) and (max-width: 124.94rem) {
+	.hero {
+		column-gap: 29rem;
+	}
+
+	.hero__content {
+		width: 25%;
+		row-gap: 1.88rem;
+		justify-content: center;
+	}
+
+	.discount__content {
+		width: 43%;
+	}
+
+	footer {
+		column-gap: 8vw;
+	}
+}
+
+@media (width > 119.94rem) {
+	.hero__content {
+		width: 20%;
+	}
+	.discount__content {
+		width: 37%;
+	}
 }

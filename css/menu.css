@@ -24,12 +24,25 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: #393939;
-	min-width: 15.5556rem;
-	max-width: 16.6667rem;
-	min-height: 10rem;
-	max-height: 11.1111rem;
+	min-width: 17.5rem;
+	max-width: 18.75rem;
+	min-height: 11.25rem;
+	max-height: 12.5rem;
+	position: relative;
 	color: #fff;
 	text-transform: uppercase;
+}
+
+/* Button Outline */
+.nav-hero__heading-outline {
+	position: absolute;
+	min-width: 17.5rem;
+	max-width: 18.75rem;
+	min-height: 11.25rem;
+	max-height: 12.5rem;
+	border: 5px solid #5baac3;
+	bottom: 15px;
+	right: 15px;
 }
 
 /* Sub Navigation */
@@ -92,4 +105,16 @@ header {
 .menu-item__price {
 	color: #5bacc3;
 	padding-bottom: 1.1111rem;
+}
+
+@media (min-width: 80rem) and (max-width: 89.94rem) {
+	.menu-item__desc {
+		width: 26%;
+	}
+}
+
+@media (min-width: 90rem) and (max-width: 124.94rem) {
+	.menu-item__desc {
+		width: 33%;
+	}
 }
