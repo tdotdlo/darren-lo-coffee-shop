@@ -1,0 +1,31 @@
+// Main Body Font Size
+@mixin body-font {
+	font-size: 1.13rem;
+	font-family: "Open Sans";
+	font-weight: 400;
+}
+
+//Main Body Font Size - Italics
+@mixin body-font-italics {
+	font-size: 1.13rem;
+	font-weight: 400;
+	font-style: italic;
+}
+
+//H1 and H2 headings Size
+@mixin main-headings {
+	font-size: 3.75rem;
+	font-weight: 300;
+}
+
+//H3 Headings
+@mixin subheadings {
+	font-size: 2.06rem;
+	font-weight: 300;
+}
+
+// Discount Banner
+@mixin discount-banner {
+	font-size: 2.81rem;
+	font-weight: 400;
+}

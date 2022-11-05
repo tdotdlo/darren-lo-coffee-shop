@@ -1,0 +1,21 @@
+// Media Displays
+// Resolutions from 1280 - 1439px
+@mixin laptop-1280 {
+	@media (min-width: 80rem) and (max-width: 89.94rem) {
+		@content;
+	}
+}
+
+// Resolution from 1440px - 1919px
+@mixin laptop-1440 {
+	@media (min-width: 90rem) and (max-width: 119.94rem) {
+		@content;
+	}
+}
+
+// Resolution from 1920px and larger
+@mixin desktop-1920 {
+	@media (min-width: 120rem) {
+		@content;
+	}
+}
