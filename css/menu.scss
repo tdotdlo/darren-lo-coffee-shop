@@ -1,8 +1,9 @@
 @use "../css/partials/display" as *;
+@use "../css/partials/colors" as *;
 
 /* Main navigation */
 header {
-	background-color: #fff0ed;
+	background-color: $primary-color;
 }
 
 /* Hero Section Image */
@@ -24,7 +25,7 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #393939;
+		background-color: $base-graphite;
 		min-width: 17.5rem;
 		max-width: 18.75rem;
 		min-height: 11.25rem;
@@ -41,7 +42,7 @@ header {
 		max-width: 18.75rem;
 		min-height: 11.25rem;
 		max-height: 12.5rem;
-		border: 5px solid #5baac3;
+		border: 5px solid $secondary-color;
 		bottom: 15px;
 		right: 15px;
 	}
@@ -51,7 +52,7 @@ header {
 .nav__sub-nav {
 	list-style: none;
 	color: #fff;
-	background-color: #393939;
+	background-color: $base-graphite;
 	min-width: 100%;
 	max-width: 100%;
 	min-height: 3.3333rem;
@@ -70,7 +71,7 @@ header {
 		display: inline-block;
 		margin: 1.1111rem 0rem;
 		padding: 0.0556rem 1.1111rem;
-		border-left: solid 4px #5baac3;
+		border-left: solid 4px $secondary-color;
 	}
 }
 
@@ -79,12 +80,12 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #fff0ed;
+	background-color: $primary-color;
 	text-align: center;
 
 	/* Selects every even element that has .menu-item as class */
 	&:nth-of-type(even) {
-		background-color: #f7f7f7;
+		background-color: $base-silver;
 	}
 
 	& h2 {
@@ -102,22 +103,18 @@ header {
 		font-style: italic;
 		margin-bottom: 0.63rem;
 
-		@include d.laptop-1440 {
-			& {
-				width: 33%;
-			}
+		@include laptop-1440 {
+			width: 33%;
 		}
 
-		@include d.desktop-1920 {
-			& {
-				width: 25%;
-			}
+		@include desktop-1920 {
+			width: 25%;
 		}
 	}
 
 	/* Price for products */
 	&__price {
-		color: #5bacc3;
+		color: $secondary-color;
 		padding-bottom: 1.1111rem;
 	}
 }
