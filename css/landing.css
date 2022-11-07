@@ -1,41 +1,5 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
-/* Changes highlighted text background-color to Nitro Blue and font color to White */
-::-moz-selection {
-  background-color: #5baac3;
-  color: #fff;
-}
-::selection {
-  background-color: #5baac3;
-  color: #fff;
-}
-
-/* Creates smooth scrolling effect. */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-size: 1.13rem;
-  font-family: "Open Sans";
-  font-weight: 400;
-}
-
-/* Headers Style for all pages */
-h1,
-h2 {
-  font-size: 3.75rem;
-  font-weight: 300;
-}
-
-/* H3 and Nav Heading */
-:is(h3, .nav__heading) {
-  font-size: 2.06rem;
-  font-weight: 300;
+.discount__banner--bold, .company-info--bold {
+  font-style: bold;
 }
 
 /* Nav and Sub Navigation */
@@ -84,7 +48,7 @@ h2 {
   color: #5bacc3;
 }
 
-/* -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
 .discount__button, .products__button, .hero__button {
   position: relative;
   background-color: #5baac3;
@@ -107,6 +71,11 @@ h2 {
   border: 0.13rem solid #393939;
   bottom: 0.31rem;
   right: 0.31rem;
+}
+
+.company-info > img, .discount__icons > img {
+  min-width: 3.13rem;
+  max-width: 7.5rem;
 }
 
 /* Header, nav-hero and footer background color */
@@ -340,11 +309,6 @@ h2 {
   padding: 40px;
   font-size: 2.8125rem;
 }
-/* Font-weight - Bold modifier */
-.font-bold {
-  font-weight: bold;
-}
-
 :is(.hero__button, .products__button, .discount__button) > a {
   text-decoration: none;
   color: #fff;
@@ -387,6 +351,9 @@ h2 {
   max-width: 7.5rem;
   opacity: 0.25;
 }
+.footer address {
+  font-style: normal;
+}
 
 /* Company Info Card */
 .company-info {
@@ -397,15 +364,4 @@ h2 {
 }
 .company-info__social {
   margin-top: -3px;
-}
-
-/* Changes font-style to normal while using <address> tag */
-address {
-  font-style: normal;
-}
-
-/* Social Media and Discount Images */
-:is(.discount__icons, .company-info) img {
-  min-width: 3.13rem;
-  max-width: 7.5rem;
 }/*# sourceMappingURL=landing.css.map */

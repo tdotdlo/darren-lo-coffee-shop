@@ -9,3 +9,6 @@ $primary-button-color: $secondary-color;
 $button-outline: $secondary-color;
 
 // Secondary Colors;
+@mixin section-bg-color($color) {
+	background-color: $color;
+}

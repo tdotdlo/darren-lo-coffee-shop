@@ -1,34 +1,17 @@
-@use "../css/partials/global" as *;
-@use "../css/partials/colors" as *;
+// @use "../css/partials/global" as *;
+@use "./partials/components/nav";
+@use "./partials/colors" as *;
 @use "../css/partials/display" as *;
+@use "../css/partials/fonts";
 
-%button-props {
-	position: relative;
-	background-color: $primary-button-color;
-	min-width: 11.25rem;
-	max-width: 20%;
-	padding: 1.25rem;
-	font-size: 1.13rem;
-	text-transform: uppercase;
-	text-align: center;
-	cursor: pointer;
-	border: none;
-}
-
-%button-border {
-	position: absolute;
-	min-width: 11.25rem;
-	max-width: 20%;
-	height: 3.81rem;
-	padding: 1.25rem;
-	border: 0.13rem solid $base-graphite;
-	bottom: 0.31rem;
-	right: 0.31rem;
+%icon-logo-sizes {
+	min-width: 3.13rem;
+	max-width: 7.5rem;
 }
 
 /* Header, nav-hero and footer background color */
 :is(header, .hero, footer) {
-	background-color: $primary-color;
+	@include section-bg-color(#ccc);
 }
 
 /* Hero */
@@ -234,6 +217,10 @@
 		height: 7vh;
 	}
 
+	&__icons > img {
+		@extend %icon-logo-sizes;
+	}
+
 	/* Aligns all elements to icons since icons have width */
 	&__content :not(&__icons, &__button) {
 		padding-left: 3.75rem;
@@ -279,6 +266,10 @@
 		text-align: center;
 		padding: 40px;
 		font-size: 2.8125rem;
+
+		&--bold {
+			@extend %font-bold;
+		}
 	}
 
 	&__button {
@@ -290,27 +281,10 @@
 	}
 }
 
-/* Font-weight - Bold modifier */
-.font-bold {
-	font-weight: bold;
-}
-
 :is(.hero__button, .products__button, .discount__button) > a {
 	text-decoration: none;
 	color: #fff;
 }
-
-// // Button Border
-// :is(.hero__button--border, .products__button--border, .discount__button--border) {
-// 	position: absolute;
-// 	min-width: 11.25rem;
-// 	max-width: 20%;
-// 	height: 3.81rem;
-// 	padding: 1.25rem;
-// 	border: 0.13rem solid $base-graphite;
-// 	bottom: 0.31rem;
-// 	right: 0.31rem;
-// }
 
 /* Company Info */
 .footer {
@@ -346,6 +320,10 @@
 		max-width: 7.5rem;
 		opacity: 0.25;
 	}
+
+	address {
+		font-style: normal;
+	}
 }
 
 /* Company Info Card */
@@ -358,15 +336,12 @@
 	&__social {
 		margin-top: -3px;
 	}
-}
 
-/* Changes font-style to normal while using <address> tag */
-address {
-	font-style: normal;
-}
+	& > img {
+		@extend %icon-logo-sizes;
+	}
 
-/* Social Media and Discount Images */
-:is(.discount__icons, .company-info) img {
-	min-width: 3.13rem;
-	max-width: 7.5rem;
+	&--bold {
+		@extend %font-bold;
+	}
 }

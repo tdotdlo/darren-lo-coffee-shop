@@ -1,0 +1,23 @@
+%button-props {
+	position: relative;
+	background-color: $primary-button-color;
+	min-width: 11.25rem;
+	max-width: 20%;
+	padding: 1.25rem;
+	font-size: 1.13rem;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	border: none;
+}
+
+%button-border {
+	position: absolute;
+	min-width: 11.25rem;
+	max-width: 20%;
+	height: 3.81rem;
+	padding: 1.25rem;
+	border: 0.13rem solid $base-graphite;
+	bottom: 0.31rem;
+	right: 0.31rem;
+}
