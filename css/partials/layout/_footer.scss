@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  height: 15.28rem;
+  padding-top: 4.17rem;
+
+  @include laptop-1280 {
+    column-gap: 7vw;
+  }
+
+  @include desktop-1920 {
+    justify-content: center;
+    column-gap: 13vw;
+  }
+  /*  Footer Image - Address */
+  &__logo-image-address {
+    top: 30px;
+    left: -30px;
+  }
+
+  &__logo-image-social {
+    bottom: 50px;
+    right: -30px;
+  }
+
+  /* Footer Image Properties */
+  :is(&__logo-image-address, &__logo-image-social) {
+    position: absolute;
+    min-width: 5rem;
+    max-width: 7.5rem;
+    opacity: 0.25;
+  }
+
+  address {
+    font-style: normal;
+  }
+}
+
+/* Company Info Card */
+.company-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  /* Social Media Images */
+  &__social {
+    margin-top: -3px;
+  }
+
+  & > img {
+    @extend %icon-logo-sizes;
+  }
+
+  &--bold {
+    @extend %font-bold;
+  }
+}

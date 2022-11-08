@@ -1,0 +1,54 @@
+@use "../components/buttons" as *;
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 18.75rem;
+  padding-top: 3.75rem;
+  padding-bottom: 5rem;
+
+  @include laptop-1280 {
+    column-gap: 29rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 55vh;
+    width: 30%;
+
+    @include laptop-1280 {
+      width: 25%;
+      row-gap: 1.88rem;
+      justify-content: center;
+    }
+
+    @include laptop-1440 {
+      width: 25%;
+      row-gap: 1.88rem;
+      justify-content: center;
+    }
+
+    @include desktop-1920 {
+      width: 20%;
+      row-gap: 1.88rem;
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    margin-right: 6.25rem;
+  }
+
+  &__button {
+    @extend %button-props;
+
+    &--border {
+      @extend %button-border;
+    }
+  }
+}

@@ -1,34 +1,34 @@
-@use "./colors" as *;
-@use "./fonts" as text;
+// @use "../partials/components/abstract/" as a;
+@use "../partials/main/fonts" as text;
 
 * {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 /* Changes highlighted text background-color to Nitro Blue and font color to White */
 ::selection {
-	background-color: $secondary-color;
-	color: #fff;
+  background-color: a.$secondary-color;
+  color: #fff;
 }
 
 /* Creates smooth scrolling effect. */
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	@include text.body-font;
+  @include text.body-font;
 }
 
 /* Headers Style for all pages */
 h1,
 h2 {
-	@include text.main-headings;
+  @include text.main-headings;
 }
 
 /* H3 and Nav Heading */
 :is(h3, .nav__heading) {
-	@include text.subheadings;
+  @include text.subheadings;
 }

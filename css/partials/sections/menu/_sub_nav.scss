@@ -1,0 +1,28 @@
+@use "../../components/abstract" as a;
+
+// Sub nav
+.nav__sub-nav {
+  list-style: none;
+  color: #fff;
+  background-color: a.$base-graphite;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 3.3333rem;
+  max-height: 4.4444rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Stylizes the links within the nav */
+  & :is(a, a:visited) {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* Stylizes the links within the nav */
+  & > ul > li {
+    display: inline-block;
+    margin: 1.1111rem 0rem;
+    padding: 0.0556rem 1.1111rem;
+    border-left: solid 4px a.$secondary-color;
+  }
+}

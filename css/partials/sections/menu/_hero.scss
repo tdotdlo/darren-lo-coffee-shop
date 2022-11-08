@@ -1,0 +1,45 @@
+@use "../../components/abstract/" as a;
+
+header {
+  background-color: a.$primary-color;
+}
+
+.nav-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 31.94rem;
+  max-height: 33.33rem;
+  background-image: url("../../../assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+
+  /* Menu in Hero Section */
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: a.$base-graphite;
+    min-width: 17.5rem;
+    max-width: 18.75rem;
+    min-height: 11.25rem;
+    max-height: 12.5rem;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  /* Button Outline */
+  &__heading-outline {
+    position: absolute;
+    min-width: 17.5rem;
+    max-width: 18.75rem;
+    min-height: 11.25rem;
+    max-height: 12.5rem;
+    border: 5px solid a.$secondary-color;
+    bottom: 15px;
+    right: 15px;
+  }
+}

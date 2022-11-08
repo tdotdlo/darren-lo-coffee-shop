@@ -1,0 +1,4 @@
+/* Header, nav-hero and footer background color */
+:is(.header, nav.hero, footer) {
+  background-color: #fff0ed;
+}/*# sourceMappingURL=landing.css.map */

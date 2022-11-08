@@ -1,0 +1,121 @@
+/* Discount */
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12.5rem;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10rem 0rem;
+
+    @include laptop-1440 {
+      :is(&, &__banner) {
+        width: 80%;
+      }
+    }
+
+    @include desktop-1920 {
+      :is(&, &__banner) {
+        width: 61%;
+      }
+    }
+  }
+
+  /* Discount Content */
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    row-gap: 1.88rem;
+    margin-right: auto;
+
+    @include laptop-1280 {
+      width: 36%;
+    }
+
+    @include laptop-1440 {
+      width: 40%;
+    }
+
+    @include desktop-1920 {
+      width: 39%;
+    }
+  }
+
+  &__content > h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  /* Discount - Icons Container */
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+  }
+
+  &__icons > img {
+    @extend %icon-logo-sizes;
+  }
+
+  /* Aligns all elements to icons since icons have width */
+  &__content :not(&__icons, &__button) {
+    padding-left: 3.75rem;
+    margin-left: -60px;
+  }
+
+  /* Discount Image Container */
+  &__image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url("../assets/images/discount_bg.png");
+    background-size: cover;
+    padding: 1.25rem;
+    min-width: 25rem;
+    max-width: 31.25rem;
+    height: 47vh;
+
+    @include desktop-1920 {
+      height: 42vh;
+    }
+  }
+
+  &__image--border {
+    position: absolute;
+    min-width: 25rem;
+    max-width: 31.25rem;
+    height: 47vh;
+    border: 0.31rem solid $secondary-color;
+    top: -20px;
+    right: 20px;
+
+    @include desktop-1920 {
+      height: 42vh;
+    }
+  }
+
+  /* Discount Banner */
+  &__banner {
+    background-color: $base-graphite;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    font-size: 2.8125rem;
+
+    &--bold {
+      @extend %font-bold;
+    }
+  }
+
+  &__button {
+    @extend %button-props;
+
+    &--border {
+      @extend %button-border;
+    }
+  }
+}

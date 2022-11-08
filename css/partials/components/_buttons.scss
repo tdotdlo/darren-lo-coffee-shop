@@ -1,23 +1,59 @@
+// Buttons and Button Outline
+$primary-button-color: #5baac3;
+$button-outline: #393939;
+
+// Button Placeholders
+// Button Properties
 %button-props {
-	position: relative;
-	background-color: $primary-button-color;
-	min-width: 11.25rem;
-	max-width: 20%;
-	padding: 1.25rem;
-	font-size: 1.13rem;
-	text-transform: uppercase;
-	text-align: center;
-	cursor: pointer;
-	border: none;
+  position: relative;
+  background-color: $primary-button-color;
+  min-width: 11.25rem;
+  max-width: 20%;
+  padding: 1.25rem;
+  font-size: 1.13rem;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  color: #fff;
 }
 
+// Button Border - Nitro Blue
 %button-border {
-	position: absolute;
-	min-width: 11.25rem;
-	max-width: 20%;
-	height: 3.81rem;
-	padding: 1.25rem;
-	border: 0.13rem solid $base-graphite;
-	bottom: 0.31rem;
-	right: 0.31rem;
+  position: absolute;
+  min-width: 11.25rem;
+  max-width: 20%;
+  height: 3.81rem;
+  padding: 1.25rem;
+  border: 0.13rem solid $base-graphite;
+  bottom: 0.31rem;
+  right: 0.31rem;
+}
+
+// Hero Button
+.hero__button {
+  @extend %button-props;
+
+  &--border {
+    @extend %button-border;
+  }
+}
+
+// Products Button
+.products__button {
+  @extend %button-props;
+
+  &--border {
+    @extend %button-border;
+  }
+}
+
+// Discount Button
+.discount__button {
+  @extend %button-props;
+
+  &--border {
+    @extend %button-border;
+  }
 }

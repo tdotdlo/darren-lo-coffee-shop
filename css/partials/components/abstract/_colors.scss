@@ -4,11 +4,7 @@ $secondary-color: #5baac3;
 $base-graphite: #393939;
 $base-silver: #f7f7f7;
 
-// Buttons and Button Outline
-$primary-button-color: $secondary-color;
-$button-outline: $secondary-color;
-
 // Secondary Colors;
 @mixin section-bg-color($color) {
-	background-color: $color;
+  background-color: $color;
 }

@@ -1,0 +1,45 @@
+@use "../../components/abstract/" as a;
+
+/* Menu Items Drinks / Pastries */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: a.$primary-color;
+  text-align: center;
+
+  /* Selects every even element that has .menu-item as class */
+  &:nth-of-type(even) {
+    background-color: a.$base-silver;
+  }
+
+  & h2 {
+    padding-top: 1.1111rem;
+    margin-bottom: 2.2222rem;
+  }
+
+  & > h3 {
+    margin-bottom: 0.63rem;
+  }
+
+  /* Container for item description */
+  &__desc {
+    width: 37%;
+    font-style: italic;
+    margin-bottom: 0.63rem;
+
+    @include a.laptop-1440 {
+      width: 33%;
+    }
+
+    @include a.desktop-1920 {
+      width: 25%;
+    }
+  }
+
+  /* Price for products */
+  &__price {
+    color: a.$secondary-color;
+    padding-bottom: 1.1111rem;
+  }
+}

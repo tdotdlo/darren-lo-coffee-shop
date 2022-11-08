@@ -1,0 +1,7 @@
+@use "../components/abstract" as a;
+// @use "../layout/nav";
+
+/* Header, nav-hero and footer background color */
+:is(.header, nav.hero, footer) {
+  @include a.section-bg-color(a.$primary-color);
+}
