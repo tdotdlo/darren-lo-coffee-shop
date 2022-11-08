@@ -1,3 +1,5 @@
+@use "../components/abstract/" as a;
+
 // Buttons and Button Outline
 $primary-button-color: #5baac3;
 $button-outline: #393939;
@@ -26,14 +28,23 @@ $button-outline: #393939;
   max-width: 20%;
   height: 3.81rem;
   padding: 1.25rem;
-  border: 0.13rem solid $base-graphite;
+  border: 0.13rem solid a.$base-graphite;
   bottom: 0.31rem;
   right: 0.31rem;
+}
+
+@mixin button-link($link-color) {
+  text-decoration: none;
+  color: $link-color;
 }
 
 // Hero Button
 .hero__button {
   @extend %button-props;
+
+  a {
+    @include button-link(#fff);
+  }
 
   &--border {
     @extend %button-border;
@@ -43,6 +54,11 @@ $button-outline: #393939;
 // Products Button
 .products__button {
   @extend %button-props;
+  margin-top: 40px;
+
+  a {
+    @include button-link(#fff);
+  }
 
   &--border {
     @extend %button-border;
@@ -52,6 +68,10 @@ $button-outline: #393939;
 // Discount Button
 .discount__button {
   @extend %button-props;
+
+  a {
+    @include button-link(#fff);
+  }
 
   &--border {
     @extend %button-border;

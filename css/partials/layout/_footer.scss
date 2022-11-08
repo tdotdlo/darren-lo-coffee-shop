@@ -1,15 +1,23 @@
+@use "../components/abstract/" as a;
+
+@mixin social-size($min-wid, $max-wid) {
+  min-width: $min-wid;
+  max-width: $max-wid;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
   position: relative;
   height: 15.28rem;
   padding-top: 4.17rem;
+  @include a.section-bg-color(a.$primary-color);
 
-  @include laptop-1280 {
+  @include a.laptop-1280 {
     column-gap: 7vw;
   }
 
-  @include desktop-1920 {
+  @include a.desktop-1920 {
     justify-content: center;
     column-gap: 13vw;
   }
@@ -22,6 +30,7 @@
   &__logo-image-social {
     bottom: 50px;
     right: -30px;
+    overflow: hidden;
   }
 
   /* Footer Image Properties */
@@ -32,7 +41,7 @@
     opacity: 0.25;
   }
 
-  address {
+  address.company-info {
     font-style: normal;
   }
 }
@@ -48,11 +57,11 @@
     margin-top: -3px;
   }
 
-  & > img {
-    @extend %icon-logo-sizes;
+  &__social img {
+    @include social-size(3.13rem, 7.5rem);
   }
 
   &--bold {
-    @extend %font-bold;
+    font-weight: 700;
   }
 }

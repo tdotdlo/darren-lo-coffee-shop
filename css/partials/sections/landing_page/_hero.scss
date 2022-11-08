@@ -1,4 +1,4 @@
-@use "../components/buttons" as *;
+@use "../../components/abstract/" as a;
 
 .hero {
   display: flex;
@@ -8,8 +8,9 @@
   column-gap: 18.75rem;
   padding-top: 3.75rem;
   padding-bottom: 5rem;
+  @include a.section-bg-color(a.$primary-color);
 
-  @include laptop-1280 {
+  @include a.laptop-1280 {
     column-gap: 29rem;
   }
 
@@ -21,19 +22,19 @@
     height: 55vh;
     width: 30%;
 
-    @include laptop-1280 {
+    @include a.laptop-1280 {
       width: 25%;
       row-gap: 1.88rem;
       justify-content: center;
     }
 
-    @include laptop-1440 {
+    @include a.laptop-1440 {
       width: 25%;
       row-gap: 1.88rem;
       justify-content: center;
     }
 
-    @include desktop-1920 {
+    @include a.desktop-1920 {
       width: 20%;
       row-gap: 1.88rem;
       justify-content: center;
@@ -42,13 +43,5 @@
 
   &__image {
     margin-right: 6.25rem;
-  }
-
-  &__button {
-    @extend %button-props;
-
-    &--border {
-      @extend %button-border;
-    }
   }
 }

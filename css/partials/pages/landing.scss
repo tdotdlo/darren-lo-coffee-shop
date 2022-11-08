@@ -1,7 +1,14 @@
-@use "../components/abstract" as a;
-// @use "../layout/nav";
+@use "../global";
 
-/* Header, nav-hero and footer background color */
-:is(.header, nav.hero, footer) {
-  @include a.section-bg-color(a.$primary-color);
-}
+// Components
+@use "../../partials/components/buttons";
+@use "../../partials/components/products_card";
+
+// Sections
+@use "../../partials/sections/landing_page/hero";
+@use "../../partials/sections/landing_page/products";
+@use "../../partials/sections/landing_page/discount";
+
+// Layout
+@use "../layout/nav";
+@use "../layout/footer";

@@ -1,5 +1,4 @@
-// @use "../partials/components/abstract/" as a;
-@use "../partials/main/fonts" as text;
+@use "../partials/components/abstract/" as a;
 
 * {
   padding: 0px;
@@ -19,16 +18,17 @@ html {
 }
 
 body {
-  @include text.body-font;
+  @include a.body-font;
+  overflow-x: hidden;
 }
 
 /* Headers Style for all pages */
 h1,
 h2 {
-  @include text.main-headings;
+  @include a.main-headings;
 }
 
 /* H3 and Nav Heading */
 :is(h3, .nav__heading) {
-  @include text.subheadings;
+  @include a.subheadings;
 }

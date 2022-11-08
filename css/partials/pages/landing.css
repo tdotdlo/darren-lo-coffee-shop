@@ -1,4 +1,420 @@
-/* Header, nav-hero and footer background color */
-:is(.header, nav.hero, footer) {
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Changes highlighted text background-color to Nitro Blue and font color to White */
+::-moz-selection {
+  background-color: #5baac3;
+  color: #fff;
+}
+::selection {
+  background-color: #5baac3;
+  color: #fff;
+}
+
+/* Creates smooth scrolling effect. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.13rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* Headers Style for all pages */
+h1,
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+/* H3 and Nav Heading */
+:is(h3, .nav__heading) {
+  font-size: 2.06rem;
+  font-weight: 300;
+}
+
+.discount__button, .products__button, .hero__button {
+  position: relative;
+  background-color: #5baac3;
+  min-width: 11.25rem;
+  max-width: 20%;
+  padding: 1.25rem;
+  font-size: 1.13rem;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.discount__button--border, .products__button--border, .hero__button--border {
+  position: absolute;
+  min-width: 11.25rem;
+  max-width: 20%;
+  height: 3.81rem;
+  padding: 1.25rem;
+  border: 0.13rem solid #393939;
+  bottom: 0.31rem;
+  right: 0.31rem;
+}
+
+.hero__button a {
+  text-decoration: none;
+  color: #fff;
+}
+.products__button {
+  margin-top: 40px;
+}
+.products__button a {
+  text-decoration: none;
+  color: #fff;
+}
+.discount__button a {
+  text-decoration: none;
+  color: #fff;
+}
+.products-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+  min-width: 20.63rem;
+  max-width: 21.88rem;
+  min-height: 27.5rem;
+  max-height: 28.75rem;
+  border-radius: 0.63rem;
+  box-shadow: 0 0.2778rem 0.5rem -0.0556rem rgba(0, 0, 0, 0.25);
+  /* Product Images */
+  /* Adjusts height differential in middle card */
+  /* Price and Description Qty  */
+  /* Qty Modifier */
+  /* Product Cards - Pricing */
+}
+.products-card__images {
+  min-height: 15rem;
+  max-height: 34.38rem;
+  margin-bottom: 1.25rem;
+  padding-top: 1.56rem;
+}
+.products-card__images--margin-bot {
+  margin-bottom: 0.31rem;
+}
+.products-card__description-qty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff0ed;
+  width: 100%;
+  height: 9.38rem;
+  border-bottom-right-radius: 0.63rem;
+  border-bottom-left-radius: 0.63rem;
+  margin-top: 1.88rem;
+  padding: 1.25rem 1.11rem;
+}
+.products-card__description-qty > ul {
+  list-style: none;
+}
+.products-card__description-qty--grey {
+  color: #909090;
+}
+.products-card__price {
+  font-size: 2.0625rem;
+  font-weight: 700;
+  color: #5baac3;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 18.75rem;
+       column-gap: 18.75rem;
+  padding-top: 3.75rem;
+  padding-bottom: 5rem;
+  background-color: #fff0ed;
+}
+@media (min-width: 80rem) and (max-width: 89.94rem) {
+  .hero {
+    -moz-column-gap: 29rem;
+         column-gap: 29rem;
+  }
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 55vh;
+  width: 30%;
+}
+@media (min-width: 80rem) and (max-width: 89.94rem) {
+  .hero__content {
+    width: 25%;
+    row-gap: 1.88rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 90rem) and (max-width: 119.94rem) {
+  .hero__content {
+    width: 25%;
+    row-gap: 1.88rem;
+    justify-content: center;
+  }
+}
+@media (min-width: 120rem) {
+  .hero__content {
+    width: 20%;
+    row-gap: 1.88rem;
+    justify-content: center;
+  }
+}
+.hero__image {
+  margin-right: 6.25rem;
+}
+
+.products-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 3.75rem;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 2.2222rem 0rem;
+}
+.products a {
+  text-decoration: none;
+}
+.products > h2 {
+  padding-top: 1.1111rem;
+  margin-bottom: 3.75rem;
+}
+
+/* Discount */
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 12.5rem;
+  /* Discount Content */
+  /* Discount - Icons Container */
+  /* Aligns all elements to icons since icons have width */
+  /* Discount Image Container */
+  /* Discount Banner */
+}
+.discount-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10rem 0rem;
+}
+@media (min-width: 90rem) and (max-width: 119.94rem) {
+  :is(.discount-container, .discount-container__banner) {
+    width: 80%;
+  }
+}
+@media (min-width: 120rem) {
+  :is(.discount-container, .discount-container__banner) {
+    width: 61%;
+  }
+}
+.discount__content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  row-gap: 1.88rem;
+  margin-right: auto;
+}
+@media (min-width: 80rem) and (max-width: 89.94rem) {
+  .discount__content {
+    width: 36%;
+  }
+}
+@media (min-width: 90rem) and (max-width: 119.94rem) {
+  .discount__content {
+    width: 40%;
+  }
+}
+@media (min-width: 120rem) {
+  .discount__content {
+    width: 39%;
+  }
+}
+.discount__content > h2 {
+  margin-bottom: 1.25rem;
+}
+.discount__icons {
+  display: flex;
+  justify-content: space-between;
+  height: 7vh;
+}
+.discount__icons > img {
+  min-width: 3.13rem;
+  max-width: 7.5rem;
+}
+.discount__content :not(.discount__icons, .discount__button) {
+  padding-left: 3.75rem;
+  margin-left: -60px;
+}
+.discount__image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url("../../../../assets/images/discount_bg.png");
+  background-size: cover;
+  padding: 1.25rem;
+  min-width: 25rem;
+  max-width: 31.25rem;
+  height: 47vh;
+}
+@media (min-width: 120rem) {
+  .discount__image {
+    height: 42vh;
+  }
+}
+.discount__image--border {
+  position: absolute;
+  min-width: 25rem;
+  max-width: 31.25rem;
+  height: 47vh;
+  border: 0.31rem solid #5baac3;
+  top: -20px;
+  right: 20px;
+}
+@media (min-width: 120rem) {
+  .discount__image--border {
+    height: 42vh;
+  }
+}
+.discount__banner {
+  background-color: #393939;
+  width: 90%;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  font-size: 2.8125rem;
+}
+.discount__banner--bold {
+  font-weight: 700;
+}
+
+/* Nav and Sub Navigation */
+.nav__links > li > a,
+.nav__sub-nav > ul > li > a {
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Main Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1.1111rem;
+  background-color: #fff0ed;
+}
+
+.nav__logo > a > h2 {
+  font-size: 2.75rem;
+}
+
+.nav__logo {
+  display: flex;
+  -moz-column-gap: 0.32rem;
+       column-gap: 0.32rem;
+}
+
+/* Removes Link underline and changes link colours to black */
+:is(.nav__logo, .nav__links) a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  width: 18.75rem;
+  list-style: none;
+  text-transform: uppercase;
+  margin-bottom: 0.44rem;
+}
+
+/* Nav and Sub Nav Hover State */
+:is(.nav__links, .nav__sub-nav) a:hover {
+  color: #5baac3;
+}
+
+/* --------------------------------------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  height: 15.28rem;
+  padding-top: 4.17rem;
+  background-color: #fff0ed;
+  /*  Footer Image - Address */
+  /* Footer Image Properties */
+}
+@media (min-width: 80rem) and (max-width: 89.94rem) {
+  .footer {
+    -moz-column-gap: 7vw;
+         column-gap: 7vw;
+  }
+}
+@media (min-width: 120rem) {
+  .footer {
+    justify-content: center;
+    -moz-column-gap: 13vw;
+         column-gap: 13vw;
+  }
+}
+.footer__logo-image-address {
+  top: 30px;
+  left: -30px;
+}
+.footer__logo-image-social {
+  bottom: 50px;
+  right: -30px;
+  overflow: hidden;
+}
+:is(.footer__logo-image-address, .footer__logo-image-social) {
+  position: absolute;
+  min-width: 5rem;
+  max-width: 7.5rem;
+  opacity: 0.25;
+}
+.footer address.company-info {
+  font-style: normal;
+}
+
+/* Company Info Card */
+.company-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  /* Social Media Images */
+}
+.company-info__social {
+  margin-top: -3px;
+}
+.company-info__social img {
+  min-width: 3.13rem;
+  max-width: 7.5rem;
+}
+.company-info--bold {
+  font-weight: 700;
 }/*# sourceMappingURL=landing.css.map */
